@@ -5,7 +5,7 @@
  *
  * Este script contiene una clase Calculadora que proporciona métodos estáticos para realizar operaciones matemáticas básicas.
  * Autor: Moreno
- * Versión: 1.0
+ * Versión: 1.1
  */
 class Calculadora {
   

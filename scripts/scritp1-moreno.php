@@ -5,7 +5,7 @@
  *
  * Este script contiene funciones para realizar operaciones matemáticas básicas, como la suma, resta, multiplicación y división.
  * Autor: Moreno
- * Versión: 1.0
+ * Versión: 1.1
  */
 
 /**
