@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Docs For Class Calculadora</title>
+  <link rel="stylesheet" href="../media/stylesheet.css" />
+  <script src="../media/lib/classTree.js"></script>
+<link id="webfx-tab-style-sheet" type="text/css" rel="stylesheet" href="../media/lib/tab.webfx.css" />
+<script type="text/javascript" src="../media/lib/tabpane.js"></script>
+  <script language="javascript" type="text/javascript" src="../media/lib/ua.js"></script>
+<script language="javascript" type="text/javascript">
+	var imgPlus = new Image();
+	var imgMinus = new Image();
+	imgPlus.src = "../media/images/plus.gif";
+	imgMinus.src = "../media/images/minus.gif";
+	
+	function showNode(Node){
+        switch(navigator.family){
+        	case 'nn4':
+        		// Nav 4.x code fork...
+				var oTable = document.layers["span" + Node];
+				var oImg = document.layers["img" + Node];
+        		break;
+        	case 'ie4':
+        		// IE 4/5 code fork...
+				var oTable = document.all["span" + Node];
+				var oImg = document.all["img" + Node];
+        		break;
+        	case 'gecko':
+        		// Standards Compliant code fork...
+				var oTable = document.getElementById("span" + Node);
+				var oImg = document.getElementById("img" + Node);
+        		break;
+        }
+		oImg.src = imgMinus.src;
+		oTable.style.display = "block";
+	}
+	
+	function hideNode(Node){
+        switch(navigator.family){
+        	case 'nn4':
+        		// Nav 4.x code fork...
+				var oTable = document.layers["span" + Node];
+				var oImg = document.layers["img" + Node];
+        		break;
+        	case 'ie4':
+        		// IE 4/5 code fork...
+				var oTable = document.all["span" + Node];
+				var oImg = document.all["img" + Node];
+        		break;
+        	case 'gecko':
+        		// Standards Compliant code fork...
+				var oTable = document.getElementById("span" + Node);
+				var oImg = document.getElementById("img" + Node);
+        		break;
+        }
+		oImg.src = imgPlus.src;
+		oTable.style.display = "none";
+	}
+	
+	function nodeIsVisible(Node){
+        switch(navigator.family){
+        	case 'nn4':
+        		// Nav 4.x code fork...
+				var oTable = document.layers["span" + Node];
+        		break;
+        	case 'ie4':
+        		// IE 4/5 code fork...
+				var oTable = document.all["span" + Node];
+        		break;
+        	case 'gecko':
+        		// Standards Compliant code fork...
+				var oTable = document.getElementById("span" + Node);
+        		break;
+        }
+		return (oTable && oTable.style.display == "block");
+	}
+	
+	function toggleNodeVisibility(Node){
+		if (nodeIsVisible(Node)){
+			hideNode(Node);
+		}else{
+			showNode(Node);
+		}
+	}
+</script>
+<!-- template designed by Julien Damon based on PHPEdit's generated templates, and tweaked by Greg Beaver -->
+<body bgcolor="#ffffff" ><!-- Start of Class Data -->
+<h2>
+	Class Calculadora
+</h2> (line <span class="linenumber">10</span>)
+<div class="tab-pane" id="tabPane1">
+<script type="text/javascript">
+tp1 = new WebFXTabPane( document.getElementById( "tabPane1" ));
+</script>
+
+<div class="tab-page" id="Description">
+<h2 class="tab">Description</h2>
+<pre>
+</pre>
+<p>
+	<b><i>Located in File: <a href="_script2-moreno.php.html">/script2-moreno.php</a></i></b><br>
+</p>
+<!-- ========== Info from phpDoc block ========= -->
+<h5>Script 2 - Clase Calculadora</h5>
+<div class="desc"><p>Este script contiene una clase Calculadora que proporciona métodos estáticos para realizar operaciones matemáticas básicas.  Autor: Moreno  Versión: 1.0</p></div>
+<ul>
+	</ul>
+<br /><hr />
+</div>
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "Description" ) );</script>
+<div class="tab-page" id="tabPage1">
+
+<h2 class="tab">Class Variables</h2>
+<!-- ============ VARIABLE DETAIL =========== -->
+<strong>Summary:</strong><br />
+<hr />
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage1" ) );</script>
+</div>
+<div class="tab-page" id="constantsTabpage">
+
+<h2 class="tab">Class Constants</h2>
+<!-- ============ VARIABLE DETAIL =========== -->
+<strong>Summary:</strong><br />
+<hr />
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "constantsTabpage" ) );</script>
+</div>
+<div class="tab-page" id="tabPage2">
+<h2 class="tab">Method Detail</h2>
+<!-- ============ METHOD DETAIL =========== -->
+<strong>Summary:</strong><br />
+<div class="method-summary">
+    <div class="method-definition">
+    static         <span class="method-result">mixed</span>
+        <a href="#methoddividir" title="details" class="method-name">dividir</a>
+        (<span class="var-type">int</span>&nbsp;<span class="var-name">$num1</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$num2</span>)
+        </div>
+    <div class="method-definition">
+    static         <span class="method-result">int</span>
+        <a href="#methodmultiplicar" title="details" class="method-name">multiplicar</a>
+        (<span class="var-type">int</span>&nbsp;<span class="var-name">$num1</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$num2</span>)
+        </div>
+    <div class="method-definition">
+    static         <span class="method-result">int</span>
+        <a href="#methodrestar" title="details" class="method-name">restar</a>
+        (<span class="var-type">int</span>&nbsp;<span class="var-name">$num1</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$num2</span>)
+        </div>
+    <div class="method-definition">
+    static         <span class="method-result">int</span>
+        <a href="#methodsumar" title="details" class="method-name">sumar</a>
+        (<span class="var-type">int</span>&nbsp;<span class="var-name">$num1</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$num2</span>)
+        </div>
+</div>
+<hr />
+<A NAME='method_detail'></A>
+
+
+<a name="methoddividir" id="methoddividir"><!-- --></a>
+<div style="background='#ffffff'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Static Method dividir</strong> (line <span class="linenumber">60</span>)
+ </h4> 
+<h4><i>mixed</i> <strong>dividir(
+int
+$num1, int
+$num2)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<h5>Divide dos números.</h5>
+		<h4>Parameters</h4>
+	<ul>
+			<li><strong>int $num1</strong>: El numerador.</li>
+			<li><strong>int $num2</strong>: El denominador.</li>
+		</ul>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>return</strong> - El resultado de la división o un mensaje de error si se intenta dividir entre cero.</li>
+			<li><strong>since</strong> - 1.0</li>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<a name="methodmultiplicar" id="methodmultiplicar"><!-- --></a>
+<div style="background='#eeeeee'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Static Method multiplicar</strong> (line <span class="linenumber">47</span>)
+ </h4> 
+<h4><i>int</i> <strong>multiplicar(
+int
+$num1, int
+$num2)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<h5>Multiplica dos números.</h5>
+		<h4>Parameters</h4>
+	<ul>
+			<li><strong>int $num1</strong>: El primer número.</li>
+			<li><strong>int $num2</strong>: El segundo número.</li>
+		</ul>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>return</strong> - La multiplicación de los dos números.</li>
+			<li><strong>since</strong> - 1.0</li>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<a name="methodrestar" id="methodrestar"><!-- --></a>
+<div style="background='#ffffff'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Static Method restar</strong> (line <span class="linenumber">34</span>)
+ </h4> 
+<h4><i>int</i> <strong>restar(
+int
+$num1, int
+$num2)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<h5>Resta dos números.</h5>
+		<h4>Parameters</h4>
+	<ul>
+			<li><strong>int $num1</strong>: El primer número.</li>
+			<li><strong>int $num2</strong>: El segundo número.</li>
+		</ul>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>return</strong> - La resta de los dos números.</li>
+			<li><strong>since</strong> - 1.0</li>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<a name="methodsumar" id="methodsumar"><!-- --></a>
+<div style="background='#eeeeee'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Static Method sumar</strong> (line <span class="linenumber">21</span>)
+ </h4> 
+<h4><i>int</i> <strong>sumar(
+int
+$num1, int
+$num2)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<h5>Suma dos números.</h5>
+		<h4>Parameters</h4>
+	<ul>
+			<li><strong>int $num1</strong>: El primer número.</li>
+			<li><strong>int $num2</strong>: El segundo número.</li>
+		</ul>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>return</strong> - La suma de los dos números.</li>
+			<li><strong>since</strong> - 1.0</li>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage2" ) );</script></div>
+<div class="tab-page" id="iVars">
+<h2 class="tab">Inherited Variables</h2>
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "iVars" ) );</script>
+<!-- =========== VAR INHERITED SUMMARY =========== -->
+<A NAME='var_inherited_summary'><!-- --></A>
+<h3>Inherited Class Variable Summary</h3>
+
+	</div>
+<div class="tab-page" id="iMethods">
+<h2 class="tab">Inherited Methods</h2>
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "iMethods" ) );</script>
+<!-- =========== INHERITED METHOD SUMMARY =========== -->
+<A NAME='functions_inherited'><!-- --></A>
+<h3>Inherited Method Summary</h3>
+
+	</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+
+setupAllTabs();
+
+//]]>
+</script>
+	<div id="credit">
+		<hr />
+		Documentation generated on Tue, 23 May 2023 19:44:43 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</div>
+</body>
+</html>
